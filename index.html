@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Quiz Application</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Quiz Application</h1>
+                <p>Test Your Knowledge</p>
+            </div>
+
+            <div class="quiz-info">
+                <div>
+                    <span>Time Left</span>
+                    <h3 id="timer">60</h3>
+                </div>
+
+                <div>
+                    <span>Score</span>
+                    <h3 id="score">0</h3>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div id="start-screen">
+                <h2>Welcome to the Quiz</h2>
+                <p>Answer all the questions before the timer ends</p>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="hidden">
+                <h2 id="question">Question goes here</h2>
+
+                <div id="answer-buttons"></div>
+
+                <div class="navigation">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+
+            <div id="result-screen" class="hidden">
+                <h2>Quiz Completed</h2>
+                <h3 id="final-score">Your Score</h3>
+                <p id="result-message"></p>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
